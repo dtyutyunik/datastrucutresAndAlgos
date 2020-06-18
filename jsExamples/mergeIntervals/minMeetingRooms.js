@@ -55,7 +55,7 @@ let minMeetingRoom=(arr)=>{
 	}
 	return rooms;
 }
-// console.log(minMeetingRoom( [[1,4], [2,5], [7,9]]))                 //2
+console.log(minMeetingRoom( [[1,4], [2,5], [7,9]]))                 //2
 // console.log(minMeetingRoom( [[6,7], [2,4], [8,12]]))                //1
 // console.log(minMeetingRoom( [[1,4], [2,3], [3,6]]))                 //2
 // console.log(minMeetingRoom( [[4,5], [2,3], [2,4], [3,5]]))          //2
@@ -111,8 +111,8 @@ class MinHeap {
 }
 
 
-console.log(minMeetingRoomsHeap( [[1,4], [2,5], [7,9]]))                 //2
-console.log(minMeetingRoomsHeap( [[6,7], [2,4], [8,12]]))                //1
-console.log(minMeetingRoomsHeap( [[1,4], [2,3], [3,6]]))                 //2
-console.log(minMeetingRoomsHeap( [[4,5], [2,3], [2,4], [3,5]]))          //2
+// console.log(minMeetingRoomsHeap( [[1,4], [2,5], [7,9]]))                 //2
+// console.log(minMeetingRoomsHeap( [[6,7], [2,4], [8,12]]))                //1
+// console.log(minMeetingRoomsHeap( [[1,4], [2,3], [3,6]]))                 //2
+// console.log(minMeetingRoomsHeap( [[4,5], [2,3], [2,4], [3,5]]))          //2
 

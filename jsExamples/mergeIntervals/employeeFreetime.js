@@ -53,4 +53,25 @@ function employeeFreeTime(arr){
 
 // console.log(employeeFreeTime([[[1,3], [5,6]], [[2,3], [6,8]]]))                 //[3,5]
 // console.log(employeeFreeTime([[[1,3], [9,12]], [[2,4]], [[6,8]]]))              //[4,6], [8,9]
-console.log(employeeFreeTime([[[1,3]], [[2,4]], [[3,5], [7,9]]]))               //[5,7]
+// console.log(employeeFreeTime([[[1,3]], [[2,4]], [[3,5], [7,9]]]))               //[5,7]
+
+
+var employeeFreeTimeSSS = function(schedule) {
+    schedule=schedule.flat(1).sort((a,b)=>(a.start-b.start))
+    console.log(schedule)
+    let merge=[];
+    
+    for(let i=0;i<schedule.length-1;i++){
+        let end=schedule[i].end;
+        let start=schedule[i+1].start;
+        console.log(end,start)
+        if(end<start){
+            console.log('found',end,start)
+            merge.push(end,start)
+        }
+    }
+    return merge
+};
+
+
+console.log(employeeFreeTimeSSS([{ start: 1, end: 2 },{ start: 1, end: 3 },{ start: 4, end: 10 },    { start: 5, end: 6 }]))

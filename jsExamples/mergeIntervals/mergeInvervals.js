@@ -40,7 +40,7 @@ Explanation: Since all the given intervals overlap, we merged them into one.
 
       for(let i=1;i<intervals.length;i++){
           
-        if(intervals[i][0]<end){
+        if(intervals[i][0]<=end){
 
             end=Math.max(intervals[i][1],end)   //if the next beginning value is less than the end value, then we update our current end
         }else{
@@ -56,9 +56,10 @@ Explanation: Since all the given intervals overlap, we merged them into one.
   }
 
 
-  console.log(mergeArr([[1,4], [2,5], [7,9]]))
-  console.log(mergeArr([[6,7], [2,4], [5,9]]))
-  console.log(mergeArr([[1,4], [2,6], [3,5]]))
+  // console.log(mergeArr([[1,4], [2,5], [7,9]]))
+  // console.log(mergeArr([[6,7], [2,4], [5,9]]))
+  // console.log(mergeArr([[1,4], [2,6], [3,5]]))
+  console.log(mergeArr([[1,3], [4,5]]))
   
 //   process.stdout.write('Merged intervals: ');
 //   let result = merge([new Interval(1, 4), new Interval(2, 5), new Interval(7, 9)]);
